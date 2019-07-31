@@ -1,0 +1,8 @@
+1. Gradient-Based Learning Applied to Document Recognition - yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+2. Introduction to CNN - cs.nju.edu.cn/wujx/paper/CNN.pdf
+3. Understanding CNN with a Mathematical Model - arxiv.org/pdf/1609.04112.pdf
+4. Deliving Deep into Rectifiers: Surpassing Human-level Performance on ImageNet Classification - arxiv.org/pdf/1502.01852
+5. Evaluation of Pooling Architectures for Object Recognition - ais.uni-bonn.de/papers/icann2010_maxpool.pdf
+6. The 9 Deep Learning Papers You Need To Know About (Understandiing CNNs Part 3) - adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html
+7. A Friendly Introduction to Cross-Entropy Loss - rdipietro.github.io/friendly-intro-to-cross-entropy-loss/
+8. How to implement a neural network Intermezzo 2 - peterroelants.github.io/posts/neural_network_implementation_intermezzo02/
