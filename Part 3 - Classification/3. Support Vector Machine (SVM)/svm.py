@@ -1,6 +1,4 @@
 # SVM
-# Here we use the linear SVM
-
 
 # Importing the libraries
 import numpy as np
@@ -30,8 +28,6 @@ from sklearn.svm import SVC            # Support vector classifier
 classifier = SVC(kernel = 'linear', random_state = 0)
 classifier.fit(x_train, y_train)
 
-'''We use the linear kernel. By default 'rbf' '''
-
 # Predicting the test set results
 y_pred = classifier.predict(x_test)
 
@@ -57,10 +53,6 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
-'''
-As it is a liear classifier thats why it couldn't separate the datapoints well
-This is not a that good prediction model, but we can use the other kernels to make it better
-'''
 
 # Visualising the Test set results
 from matplotlib.colors import ListedColormap
