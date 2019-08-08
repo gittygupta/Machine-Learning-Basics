@@ -1,7 +1,7 @@
 # Classification Template:-
 '''It always requires feature scaling'''
 
-# Data Preprocessing:-
+# Data Preprocessing:- 
 
 # Importing the libraries
 import numpy as np
