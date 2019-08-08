@@ -1,12 +1,4 @@
 # Random Selection
-'''
-In "random_selection.py" file everytime we assign a random ad to be shown in each ad. Showing of ads
-won't depend on anything, not even on any observations of previous round. It'll be pretty random.
-And total_reward is summed up. On an average we see 1200 people click the ad out of 10000.
-Let's see if the number can be increased using UCB.
-
-We can see which ad is randomly selected for which user
-'''
 
 # Importing the libraries
 import numpy as np
