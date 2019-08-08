@@ -1,14 +1,4 @@
 # Principal Component Analysis
-'''
-In the dataset we have 14 independent variables which we will reduce to 2 so that we can get
-a proper visualisation of the classifications. After reduction of dimensions we apply logistic
-regression and visualise it.
-
-We can use any classification model, here we use Logistic Regression
-
-PCA doesn't depend or has nothing to do with the dependent variable
-'''
-
 # Data Preprocessing:-
 
 # Importing the libraries
@@ -18,10 +8,6 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Wine.csv') 
-'''
-Based on the amount of contents in wine, we have 3 segments of customers, and we predict the
-segment in which a customer lies.
-'''
 
 # Separating into dependent and independent variables
 x = dataset.iloc[:, 0:-1].values
@@ -38,16 +24,6 @@ x_train = sc_x.fit_transform(x_train)
 x_test = sc_x.transform(x_test)
 
 # Applying PCA
-'''
-Initially we keep "n_components = None" because we don't know the variances of each variable
-and we need to check what the variances are. We will generate a vector of variances and
-ultimately decide on the number of PCs we need, which eventually is 2 (for visualisation).
-
-Explained variance gives the variances in sorted order.
-
-We will take 1st 2 PCs which gives us a total of 56% variance of the total variance.
-Finally we have 2 independent variables.
-'''
 from sklearn.decomposition import PCA
 '''pca = PCA(n_components = None)
 '''
@@ -67,9 +43,6 @@ classifier.fit(x_train, y_train)
 y_pred = classifier.predict(x_test)
 
 # Making the CONFUSION MATRIX
-'''
-Only 1 wrong
-'''
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
@@ -109,14 +82,3 @@ plt.xlabel('PC1')
 plt.ylabel('PC2')
 plt.legend()
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
