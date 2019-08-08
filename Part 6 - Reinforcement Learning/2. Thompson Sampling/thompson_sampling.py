@@ -1,9 +1,5 @@
 # Thompson sampling
 
-'''
-In random_selection we got 1200 approx clicks and in UCB we got 2200 approx clicks
-'''
-
 # Importing the libraries
 import numpy as np
 import pandas as pd
@@ -37,20 +33,8 @@ for n in range(0, N):
     elif reward == 0:
         number_of_rewards_0[ad] += 1
     total_reward += reward
-    
-'''
-Thompson sampling gave us a reward of 2500 approx, better than UCB and more than double of 
-random_selection.
-We will get different results each time because of some random betavariate factors. But we will get more
-or less similar results.
-'''
 
 # Visualising the results
-'''
-Here also ad 4 is shown the most.
-The algo also found this ad to be clicked the most faster as we can see it was shown >9000 times
-and much higher times than UCB.
-'''
 plt.hist(ads_selected)
 plt.title('Histogram of ads shown (not clicked)')
 plt.xlabel('Ad number')
