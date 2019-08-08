@@ -1,9 +1,5 @@
 # Naive Bayes
 
-
-# Classification Template:-
-'''It always requires feature scaling'''
-
 # Data Preprocessing:-
 
 # Importing the libraries
@@ -33,9 +29,6 @@ x_test = sc_x.transform(x_test)
 from sklearn.naive_bayes import GaussianNB 
 classifier = GaussianNB()
 classifier.fit(x_train, y_train)
-'''
-no parameters in GaussianNB()
-'''
 
 # Predicting the test set results
 y_pred = classifier.predict(x_test)
@@ -43,9 +36,6 @@ y_pred = classifier.predict(x_test)
 # Making the CONFUSION MATRIX
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
-'''
-We have 10 wrong predictions in y_pred here
-'''
 
 # Visualising the Naive Bayes Training set results
 from matplotlib.colors import ListedColormap
