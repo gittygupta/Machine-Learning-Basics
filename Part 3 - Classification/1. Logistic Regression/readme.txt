@@ -1,1 +1,0 @@
-Read about sigmoid function a bit to know why it is even used
