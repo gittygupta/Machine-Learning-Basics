@@ -1,6 +1,4 @@
 # K-Nearest Neighbors(K-NN)
-# This is a non-linear classifier
-
 
 # Importing the libraries
 import numpy as np
@@ -28,12 +26,6 @@ x_test = sc_x.transform(x_test)
 from sklearn.neighbors import KNeighborsClassifier
 classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
 classifier.fit(x_train, y_train)
-'''
-n_neighbors is the toal number of nearest neighbors we wanna find (5 be default)
-metric = 'minkowski' by default and p = 2 for euclidean distance i.e, the basic formula for distance we want
-p = 1 is for manhattan distance and we don't want that
-metric = 'minkowski' and p = 2 by default
-'''
 
 # Predicting the test set results
 y_pred = classifier.predict(x_test)
@@ -60,11 +52,6 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
-'''
-Now this is much different from the Logistic Regression
-
-'''
-
 
 # Visualising the KNN Test set results
 from matplotlib.colors import ListedColormap
@@ -83,4 +70,3 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
-'''Region as usual remains the same
