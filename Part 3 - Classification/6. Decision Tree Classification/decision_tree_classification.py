@@ -2,8 +2,6 @@
 
 
 # Classification Template:-
-'''It always requires feature scaling'''
-
 
 # Importing the libraries
 import numpy as np
@@ -22,7 +20,6 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.25, random_state = 0)
 
 # Feature Scaling:-
-# No need of scaling here
 '''from sklearn.preprocessing import StandardScaler
 sc_x = StandardScaler()
 x_train = sc_x.fit_transform(x_train)
@@ -33,10 +30,6 @@ x_test = sc_x.transform(x_test)
 from sklearn.tree import DecisionTreeClassifier
 classifier = DecisionTreeClassifier(criterion = 'entropy', random_state = 0)
 classifier.fit(x_train, y_train)
-'''
-Criterion by default is 'gini' but we will use 'entropy'
-'''
-
 
 # Predicting the test set results
 y_pred = classifier.predict(x_test)
@@ -44,9 +37,6 @@ y_pred = classifier.predict(x_test)
 # Making the CONFUSION MATRIX
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
-'''
-Here we have 9 wrong predicitons on test set
-'''
 
 # Visualising the Decision Tree Classification Training set results
 from matplotlib.colors import ListedColormap
@@ -65,10 +55,6 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
-'''
-From the plot we can clearly see how the splits have been made in boxes based on conditions of the tree
-Very accurate prediction
-'''
 
 # Visualising the Decision Tree Classification Test set results
 from matplotlib.colors import ListedColormap
@@ -87,8 +73,4 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
-'''
-Errors are there but there is that 1 box where there is not test set variable
-Kind of an example of overfitting because that box seems useless
-Results will be better with 500 decision trees i.e, a Random Forest Classification
-'''
+
