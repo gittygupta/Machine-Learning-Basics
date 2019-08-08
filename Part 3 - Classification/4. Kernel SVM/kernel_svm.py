@@ -1,9 +1,6 @@
 # Kernel SVM
 # RBF
 
-# Classification Template:-
-'''It always requires feature scaling'''
-
 # Data Preprocessing:-
 
 # Importing the libraries
@@ -33,10 +30,6 @@ x_test = sc_x.transform(x_test)
 from sklearn.svm import SVC
 classifier = SVC(kernel = 'rbf', random_state = 0)
 classifier.fit(x_train, y_train)
-'''
-RBF Kernel doesn't overfit unlike a polynomial kernel with a lot of degrees
-It does have certain errors but shows the best fit just without the overfit
-'''
 
 # Predicting the test set results
 y_pred = classifier.predict(x_test)
@@ -44,7 +37,6 @@ y_pred = classifier.predict(x_test)
 # Making the CONFUSION MATRIX
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
-'''Here we have only 7 predictions wrong'''
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
