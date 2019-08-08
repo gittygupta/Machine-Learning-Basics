@@ -1,10 +1,4 @@
 # Kernel PCA
-'''
-Though kernel PCA separates classes of data which are non linearly separable, but the ultimate
-model will be such that it will have only those important dimensions which can make the data
-linearly separable by the logistic regression classifier
-'''
-
 # Data Preprocessing:-
 
 # Importing the libraries
@@ -82,17 +76,3 @@ plt.xlabel('PC1')
 plt.ylabel('PC2')
 plt.legend()
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
