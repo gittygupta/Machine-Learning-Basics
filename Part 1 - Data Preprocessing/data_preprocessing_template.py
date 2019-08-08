@@ -1,12 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# This piece of code will always be there at the first before any machine learning program. If missing data, encoding of
-# categorised data is required then that must be used, templates are there for reference of syntax.
-# Some things of course need to be changed
-
-# Data Preprocessing:-
-
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
